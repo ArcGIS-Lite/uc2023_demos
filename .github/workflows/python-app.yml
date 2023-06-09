@@ -18,4 +18,8 @@ jobs:
           pip install -r requirements.txt
 
       - name: execute py script # run main.py
+        env:
+          AGOL_ACCOUNT: ${{ secrets.AGOL_ACCOUNT }}
+          AGOL_CREDS: ${{ secrets.AGOL_CREDS }}
+          ITEM_ID: ${{ secrets.ITEM_ID }}
         run: python main.py
