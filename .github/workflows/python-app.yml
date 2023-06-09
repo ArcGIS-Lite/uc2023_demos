@@ -8,7 +8,7 @@ on:
   schedule:
     - cron: '0 */8 * * *'
   # allow it to be run on-demand
-  # workflow_dispatch:
+  workflow_dispatch:
 
 jobs:
   build:
