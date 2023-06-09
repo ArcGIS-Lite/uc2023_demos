@@ -21,4 +21,5 @@ jobs:
         env:
           AGOL_ACCOUNT: ${{ secrets.AGOL_ACCOUNT }}
           AGOL_CREDS: ${{ secrets.AGOL_CREDS }}
+          ITEM_ID: ${{ secrets.ITEM_ID }}
         run: python main.py
