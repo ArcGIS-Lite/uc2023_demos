@@ -1,6 +1,14 @@
 name: run main.py
 
-on: workflow_dispatch
+on: 
+  # workflow_dispatch
+  # push:
+  #   branches: [main]
+  # run monthly, every 1st at 7:15am UTC
+  schedule:
+    - cron: '0 */8 * * *'
+  # allow it to be run on-demand
+  # workflow_dispatch:
 
 jobs:
   build:
